@@ -1,0 +1,201 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous')
+    title Document
+style.
+    header {
+    background: #0F2361;
+    }
+    .knopka_reg {
+    background: #16377F;
+    padding: 10px;
+    border-radius: none;
+    filter: drop-shadow(0px 4px 23px rgba(255, 255, 255, 0.12)) !important;
+    }
+    body{
+    background: #0F2361;
+    }
+    .SGH h1{
+    color: white;
+    font-size: 60px;
+    }
+    .cddisk{
+    right: 0;
+    }
+    .carto4ki{
+    color: white;
+    }
+    .card{
+    --bs-card-bg: none;
+    --bs-card-border-color: none;
+    }
+    .BigKrest{
+    bottom: 0px;
+    right: 200px;
+    width: 45%;
+    }
+    .pikachu{
+    right: 0;
+    }
+header
+    nav.navbar.navbar-expand-lg.p-4(data-bs-theme='dark')
+        .container-fluid
+            a(href='')
+                img(src='img/logo.png' alt='')
+            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarTogglerDemo03' aria-controls='navbarTogglerDemo03' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarTogglerDemo03.collapse.navbar-collapse.justify-content-evenly
+                ul.navbar-nav.mb-2.mb-lg-0.mx-auto
+                    li.nav-item.mx-3
+                        a.nav-link.fs-3.text-white(href='') О нас
+                    li.nav-item.mx-3
+                        a.nav-link.fs-3.text-white(href='') Товары
+                    li.nav-item.mx-3
+                        a.nav-link.fs-3.text-white(href='') Тарифы
+                .ms-auto
+                    a(href='login')
+                        button.btn.fs-3.text-white Вход
+                    a(href='register')
+                        button.btn.fs-3.text-white.knopka_reg Зарегестрироваться
+.container
+    .row
+        .col-lg-6.col-12
+            img.imf-fluid(src='img/PS_big.png' alt='')
+        .col-lg-6.col-12.d-flex.flex-column.align-items-end.justify-content-evenly
+            .d-flex.flex-column.align-items-end.SGH
+                h1 Supersonic
+                h1 Gaming
+                h1 Hub
+            ul.navbar-nav
+                li.nav-item.text-white
+                    p.fs-3 Огромное количество игр
+                li.nav-item.text-white
+                    p.fs-3 Выгодные цены
+                li.nav-item.text-white
+                    p.fs-3 Много вариантов платежей
+                li.nav-item.text-white
+                    p.fs-3 Доставка прямо до дома
+            button.btn.fs-3.text-white.knopka_reg.w-50 Забронировать
+img.position-absolute(src='img/gamepad.png' alt='')
+img.position-absolute.cddisk(src='img/cddisk.png' alt='')
+.container.py-5.SGH
+    h1.text-white.py-5 Supersonic Gaming Hub
+    .row.d-flex.align-items-center.justify-content-center.p-4
+        .col-lg-6.col-12
+            p.text-white.m-0.fs-5 Все новинки будут появляться у нас в день релиза, либо даже раньше. Мы работаем над тем, чтобы вам было максимально комфортно играть во все новинки вместе с нами.
+        .col-lg-6.col-12.text-center
+            img(src='img/treug.png' alt='')
+    .row.d-flex.align-items-center.justify-content-center.p-4
+        .col-lg-6.col-12.text-center
+            img.ms-auto(src='img/kvadr.png' alt='')
+        .col-lg-6.col-12
+            p.text-white.m-0.fs-5 С нами вы можете играть в свои любимые игры по доступной цене. Все они куплены в официальном магазине лично нами. Следовательно, все честно и безопасно.
+    .row.d-flex.align-items-center.justify-content-center.p-4
+        .col-lg-6.col-12
+            p.text-white.m-0.fs-5 Более 1000 довольных клиентов уже пользуются нашим сервисом. И возвращаются к нам снова. Отзывы о нашей работе читай тут.
+        .col-lg-6.col-12.text-center
+            img(src='img/krest.png' alt='')
+    .row.d-flex.align-items-center.justify-content-center.p-4
+        .col-lg-6.col-12.text-center
+            img(src='img/krug.png' alt='')
+        .col-lg-6.col-12
+            p.text-white.m-0.fs-5 Быстрое получение без дополнительных заморочек. Попробуй и ТЫ! Промокод “GamingHub" - скидка 10% на первую аренду.
+.container.SGH.py-5
+    h1 Все товары
+    .row.row-cols-1.row-cols-md-2.row-cols-xl-3.carto4ki.py-5.position-relative
+        .col
+            .card(style='width: 18rem;')
+                img.card-img-top(src='img/PS.png' alt='...')
+                .card-body
+                    h5.card-title PS 5
+                    p.card-text C пт по вс 1000 р cутки
+                    button.btn.fs-6.text-white.knopka_reg.py-1.px-2 Забронировать
+        .col
+            .card(style='width: 18rem;')
+                img.card-img-top(src='img/PS4.png' alt='...')
+                .card-body
+                    h5.card-title PS 4 slim
+                    p.card-text C пт по вс 600 р cутки
+                    button.btn.fs-6.text-white.knopka_reg.py-1.px-2 Забронировать
+        .col
+            .card(style='width: 18rem;')
+                img.card-img-top(src='img/Nintendo.png' alt='...')
+                .card-body
+                    h5.card-title Nintendo swith
+                    p.card-text C пт по вс 500 р cутки
+                    button.btn.fs-6.text-white.knopka_reg.py-1.px-2 Забронировать
+        .col
+            .card(style='width: 18rem;')
+                img.card-img-top(src='img/PS4pro.png' alt='...')
+                .card-body
+                    h5.card-title PS 4 pro
+                    p.card-text C пт по вс 700 р cутки
+                    button.btn.fs-6.text-white.knopka_reg.py-1.px-2 Забронировать
+        img.position-absolute.BigKrest(src='img/BigKrest.png' alt='')
+.container.SGH
+    h1 Диаграмма посещаемости в течение дня
+    .row.d-flex.align-items-center.py-5
+        .col-lg-6.col-12
+            img(src='img/diagramma1.png' alt='')
+        .col-lg-6.col-12
+            ul.navbar-nav.text-white
+                li.nav-item
+                    p.fs-3 6% - начало дня c 03:00 по 11:00
+                li.nav-item
+                    p.fs-3 27% - середина дня c 11:00 по 15:00
+                li.nav-item
+                    p.fs-3 25% - ночь дня с 23:00 по 03:00
+                li.nav-item
+                    p.fs-3 42% - вечер дня c 15:00 по 23:00
+img.position-absolute.pikachu(src='img/pikachu.png' alt='')
+.container.SGH
+    h1 Диаграмма посещаемости за всё время
+    .row.d-flex.align-items-center.py-5
+        .col-lg-6.col-12
+            img(src='img/diargamma2.png' alt='')
+.container.SGH
+    h1 Диаграмма спроса на товар
+    .row.d-flex.align-items-center.py-5
+        .col-lg-6.col-12
+            img(src='img/diagramma3.png' alt='')
+        .col-lg-6.col-12
+            ul.navbar-nav.text-white
+                li.nav-item
+                    p.fs-3 30% - PS 4 slim
+                li.nav-item
+                    p.fs-3 30% - Nintendo switch
+                li.nav-item
+                    p.fs-3 20% - PS 4 pro
+                li.nav-item
+                    p.fs-3 20% - PS 5
+footer.bg-dark.p-5
+    .container
+        .row.text-white
+            .col-12.col-lg-2
+                img(src="img/logo_footer.png" alt='')
+            .col-12.col-lg-2
+                ul.navbar-nav
+                    p.fs-4.m-0 Карта сайта
+                    span
+                        img(src='img/span.png' alt='')
+                    li.nav-item
+                        a.text-decoration-none.text-white.fs-5(href='#') О нас
+                    li.nav-item
+                        a.text-decoration-none.text-white.fs-5(href='#') Товары
+                    li.nav-item
+                        a.text-decoration-none.text-white.fs-5(href='#') Тарифы
+            .col-12.col-lg-2
+                ul.navbar-nav
+                    p.fs-4.m-0 Контакты
+                    span
+                        img(src='img/span.png' alt='')
+                    li.nav-item
+                        a.text-decoration-none.text-white.fs-5(href='#') +7 (999) 123 45-67
+                    li.nav-item
+                        a.text-decoration-none.text-white.fs-5(href='#') sphub@mail.ru
+            .col-12.col-lg-2.ms-auto
+                img.grib(src='img/grib.png' alt='')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js' integrity='sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN' crossorigin='anonymous')
