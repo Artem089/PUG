@@ -1,0 +1,55 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Supersonic Gaming Hub
+        style.
+            input {
+            font-size: 15px;
+            width: 270px;
+            border-radius: 4px;
+            padding: 5px;
+            border: 0.7px solid;
+            }
+            form{
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+            .clik{
+            width: 20px;
+            cursor: pointer;
+            }
+            label{
+            width: 270px;
+            }
+            .btn{
+            font-size: 25px;
+            margin: 10px;
+            cursor: pointer;
+            background: none;
+            }
+    body
+        form(style='margin: 200px auto; display: flex; flex-flow: column; padding: 10px; border: 1px solid; align-items: center;' action='register')
+            h1(style='font-size: 40px;') Регистрация
+            label(style='padding: 10px;' for='')
+                input(type='text' name='name' placeholder='Имя' id='' required='')
+            label(style='padding: 10px;' for='')
+                input(type='text' name='surename' placeholder='Фамилия' id='' required='')
+            label(style='padding: 10px;' for='')
+                input(type='text' name='login' placeholder='Login' id='')
+            label(style='padding: 10px;' for='')
+                input(type='email' name='E-mail' placeholder='E-mail' id='' required='')
+            label(style='padding: 10px;' for='')
+                input(type='password' name='password' placeholder='Придумайте пароль' id='' required='')
+            label(style='padding: 10px;' for='')
+                input(type='password' name='password' placeholder='Повторите пароль' id='' required='')
+            label(style='padding: 10px;' for='')
+                input.clik(type='checkbox' name='' id='')
+                | Соглашаюсь на рассылку новинок
+            label(style='padding: 10px;' for='')
+                input.clik(type='checkbox' name='' id='' required='')
+                |  Вы соглашаетесь с Условиями использования и Политикой конфиденциальности
+            input.btn(type='submit' value='Зарегестрироваться')
