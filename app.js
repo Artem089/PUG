@@ -19,6 +19,10 @@ app.use("/index", function(request, response){
 app.use("/pageProduct", function(request, response){
     response.render("pageProduct");
 });
+
+app.use("/pageProduct2", function(request, response){
+    response.render("pageProduct2");
+});
  
 app.use(express.static('public'))
 
